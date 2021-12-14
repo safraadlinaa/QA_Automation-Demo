@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211214 13:57:14.569" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.2 (Python 3.8.10 on linux)" generated="20211214 14:07:15.026" rpa="false" schemaversion="2">
 <suite id="s1" name="Test" source="/home/nurul/PycharmProjects/Demo/test.robot">
 <test id="s1-t1" name="Open Deriv">
 <kw name="Login" library="common">
@@ -9,244 +9,244 @@
 <arg>url=https://app.deriv.com</arg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20211214 13:57:14.653" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
-<status status="PASS" starttime="20211214 13:57:14.653" endtime="20211214 13:57:34.231"/>
+<msg timestamp="20211214 14:07:15.109" level="INFO">Opening browser 'chrome' to base url 'https://app.deriv.com'.</msg>
+<status status="PASS" starttime="20211214 14:07:15.109" endtime="20211214 14:07:29.214"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1500</arg>
 <arg>1028</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<status status="PASS" starttime="20211214 13:57:34.232" endtime="20211214 13:57:34.389"/>
+<status status="PASS" starttime="20211214 14:07:29.214" endtime="20211214 14:07:29.366"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>dt_core_header_acc-info-preloader</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:34.389" endtime="20211214 13:57:34.400"/>
+<status status="PASS" starttime="20211214 14:07:29.367" endtime="20211214 14:07:29.423"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${login_btn}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:34.400" endtime="20211214 13:57:34.410"/>
+<status status="PASS" starttime="20211214 14:07:29.423" endtime="20211214 14:07:29.440"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:34.410" level="INFO">Clicking element 'dt_login_button'.</msg>
-<status status="PASS" starttime="20211214 13:57:34.410" endtime="20211214 13:57:34.447"/>
+<msg timestamp="20211214 14:07:29.441" level="INFO">Clicking element 'dt_login_button'.</msg>
+<status status="PASS" starttime="20211214 14:07:29.441" endtime="20211214 14:07:30.449"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${email_field}</arg>
 <arg>30</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:34.447" endtime="20211214 13:57:37.899"/>
+<status status="PASS" starttime="20211214 14:07:30.449" endtime="20211214 14:07:33.288"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${email_field}</arg>
 <arg>${email}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:37.900" level="INFO">Typing text 'safra@besquare.com.my' into text field 'name=email'.</msg>
-<status status="PASS" starttime="20211214 13:57:37.899" endtime="20211214 13:57:37.947"/>
+<msg timestamp="20211214 14:07:33.289" level="INFO">Typing text 'safra@besquare.com.my' into text field 'name=email'.</msg>
+<status status="PASS" starttime="20211214 14:07:33.289" endtime="20211214 14:07:33.399"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${pw_field}</arg>
 <arg>${pw}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:37.948" level="INFO">Typing text '-8x9KsrLMwAb_Kk' into text field '//*[@type="password"]'.</msg>
-<status status="PASS" starttime="20211214 13:57:37.947" endtime="20211214 13:57:37.999"/>
+<msg timestamp="20211214 14:07:33.400" level="INFO">Typing text '-8x9KsrLMwAb_Kk' into text field '//*[@type="password"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:33.399" endtime="20211214 14:07:33.568"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${login_oauth_btn}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:37.999" level="INFO">Clicking element '//*[text()="Log in"]'.</msg>
-<status status="PASS" starttime="20211214 13:57:37.999" endtime="20211214 13:57:40.753"/>
+<msg timestamp="20211214 14:07:33.569" level="INFO">Clicking element '//*[text()="Log in"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:33.568" endtime="20211214 14:07:36.437"/>
 </kw>
-<status status="PASS" starttime="20211214 13:57:14.653" endtime="20211214 13:57:40.753"/>
+<status status="PASS" starttime="20211214 14:07:15.108" endtime="20211214 14:07:36.438"/>
 </kw>
 <kw name="Switch Account" library="common">
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:57:45.755" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:57:40.755" endtime="20211214 13:57:45.755"/>
+<msg timestamp="20211214 14:07:41.441" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:07:36.440" endtime="20211214 14:07:41.441"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${acc_info}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:45.756" endtime="20211214 13:57:45.769"/>
+<status status="PASS" starttime="20211214 14:07:41.441" endtime="20211214 14:07:41.472"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${acc_info}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:45.770" level="INFO">Clicking element '//*[@id="dt_core_account-info_acc-info"]'.</msg>
-<status status="PASS" starttime="20211214 13:57:45.770" endtime="20211214 13:57:45.874"/>
+<msg timestamp="20211214 14:07:41.472" level="INFO">Clicking element '//*[@id="dt_core_account-info_acc-info"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:41.472" endtime="20211214 14:07:41.573"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${demo_acc}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:45.874" endtime="20211214 13:57:45.891"/>
+<status status="PASS" starttime="20211214 14:07:41.573" endtime="20211214 14:07:41.593"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${demo_acc}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:45.891" level="INFO">Clicking element '//*[@id="dt_core_account-switcher_demo-tab"]'.</msg>
-<status status="PASS" starttime="20211214 13:57:45.891" endtime="20211214 13:57:45.944"/>
+<msg timestamp="20211214 14:07:41.593" level="INFO">Clicking element '//*[@id="dt_core_account-switcher_demo-tab"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:41.593" endtime="20211214 14:07:41.672"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="dt_VRTC4795382"]/span</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:45.945" level="INFO">Clicking element '//*[@id="dt_VRTC4795382"]/span'.</msg>
-<status status="PASS" starttime="20211214 13:57:45.944" endtime="20211214 13:57:46.091"/>
+<msg timestamp="20211214 14:07:41.672" level="INFO">Clicking element '//*[@id="dt_VRTC4795382"]/span'.</msg>
+<status status="PASS" starttime="20211214 14:07:41.672" endtime="20211214 14:07:41.818"/>
 </kw>
-<status status="PASS" starttime="20211214 13:57:40.754" endtime="20211214 13:57:46.091"/>
+<status status="PASS" starttime="20211214 14:07:36.439" endtime="20211214 14:07:41.818"/>
 </kw>
 <kw name="Buy Rise Contract" library="common">
 <kw name="Reload Page" library="SeleniumLibrary">
 <doc>Simulates user reloading page.</doc>
-<status status="PASS" starttime="20211214 13:57:46.091" endtime="20211214 13:57:46.114"/>
+<status status="PASS" starttime="20211214 14:07:41.818" endtime="20211214 14:07:41.845"/>
 </kw>
 <kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
 <arg>chart-container__loader</arg>
 <doc>Waits until the element ``locator`` disappears from the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:46.114" endtime="20211214 13:57:47.848"/>
+<status status="PASS" starttime="20211214 14:07:41.845" endtime="20211214 14:07:43.818"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:57:52.849" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:57:47.848" endtime="20211214 13:57:52.850"/>
+<msg timestamp="20211214 14:07:48.819" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:07:43.818" endtime="20211214 14:07:48.819"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${market_type}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:57:52.850" endtime="20211214 13:57:52.868"/>
+<status status="PASS" starttime="20211214 14:07:48.820" endtime="20211214 14:07:48.838"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:57:55.869" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211214 13:57:52.869" endtime="20211214 13:57:55.869"/>
+<msg timestamp="20211214 14:07:51.838" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211214 14:07:48.838" endtime="20211214 14:07:51.838"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${market_type}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:57:55.870" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn"]'.</msg>
-<status status="PASS" starttime="20211214 13:57:55.869" endtime="20211214 13:57:55.937"/>
+<msg timestamp="20211214 14:07:51.839" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:51.839" endtime="20211214 14:07:51.898"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:00.938" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:57:55.938" endtime="20211214 13:58:00.938"/>
+<msg timestamp="20211214 14:07:56.899" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:07:51.899" endtime="20211214 14:07:56.900"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@class="ic-icon ic-1HZ10V"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:00.940" level="INFO">Clicking element '//*[@class="ic-icon ic-1HZ10V"]'.</msg>
-<status status="PASS" starttime="20211214 13:58:00.939" endtime="20211214 13:58:01.081"/>
+<msg timestamp="20211214 14:07:56.900" level="INFO">Clicking element '//*[@class="ic-icon ic-1HZ10V"]'.</msg>
+<status status="PASS" starttime="20211214 14:07:56.900" endtime="20211214 14:07:57.023"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:06.081" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:01.081" endtime="20211214 13:58:06.082"/>
+<msg timestamp="20211214 14:08:02.023" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:07:57.023" endtime="20211214 14:08:02.023"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${rise_buy}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:06.082" endtime="20211214 13:58:06.101"/>
+<status status="PASS" starttime="20211214 14:08:02.023" endtime="20211214 14:08:02.040"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${rise_buy}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:06.101" level="INFO">Clicking element '//*[@id="dt_purchase_call_button"]/div[4]/div/span'.</msg>
-<status status="PASS" starttime="20211214 13:58:06.101" endtime="20211214 13:58:06.155"/>
+<msg timestamp="20211214 14:08:02.041" level="INFO">Clicking element '//*[@id="dt_purchase_call_button"]/div[4]/div/span'.</msg>
+<status status="PASS" starttime="20211214 14:08:02.040" endtime="20211214 14:08:02.112"/>
 </kw>
-<status status="PASS" starttime="20211214 13:57:46.091" endtime="20211214 13:58:06.155"/>
+<status status="PASS" starttime="20211214 14:07:41.818" endtime="20211214 14:08:02.112"/>
 </kw>
 <kw name="Buy Lower Contract" library="common">
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:09.156" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:06.156" endtime="20211214 13:58:09.156"/>
+<msg timestamp="20211214 14:08:05.113" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211214 14:08:02.112" endtime="20211214 14:08:05.113"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${market_type}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:09.157" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn"]'.</msg>
-<status status="PASS" starttime="20211214 13:58:09.157" endtime="20211214 13:58:09.237"/>
+<msg timestamp="20211214 14:08:05.114" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn"]'.</msg>
+<status status="PASS" starttime="20211214 14:08:05.113" endtime="20211214 14:08:05.182"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${clk_forex}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:09.237" endtime="20211214 13:58:09.249"/>
+<status status="PASS" starttime="20211214 14:08:05.182" endtime="20211214 14:08:05.194"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:12.250" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:09.249" endtime="20211214 13:58:12.250"/>
+<msg timestamp="20211214 14:08:08.195" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20211214 14:08:05.194" endtime="20211214 14:08:08.195"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${clk_forex}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:12.251" level="INFO">Clicking element '//*[@id="trade"]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]/div[2]/div/div[3]/span'.</msg>
-<status status="PASS" starttime="20211214 13:58:12.250" endtime="20211214 13:58:12.315"/>
+<msg timestamp="20211214 14:08:08.196" level="INFO">Clicking element '//*[@id="trade"]/div/div[1]/div/div/div[1]/div[1]/div/div[2]/div/div/div[1]/div[2]/div/div[3]/span'.</msg>
+<status status="PASS" starttime="20211214 14:08:08.195" endtime="20211214 14:08:08.270"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:17.316" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:12.315" endtime="20211214 13:58:17.316"/>
+<msg timestamp="20211214 14:08:13.270" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:08:08.270" endtime="20211214 14:08:13.270"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@class="ic-frx ic-frxAUDUSD"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:17.316" level="INFO">Clicking element '//*[@class="ic-frx ic-frxAUDUSD"]'.</msg>
-<status status="PASS" starttime="20211214 13:58:17.316" endtime="20211214 13:58:17.430"/>
+<msg timestamp="20211214 14:08:13.271" level="INFO">Clicking element '//*[@class="ic-frx ic-frxAUDUSD"]'.</msg>
+<status status="PASS" starttime="20211214 14:08:13.270" endtime="20211214 14:08:13.354"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:22.431" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:17.430" endtime="20211214 13:58:22.431"/>
+<msg timestamp="20211214 14:08:18.355" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:08:13.354" endtime="20211214 14:08:18.355"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${contract_type}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:22.431" endtime="20211214 13:58:22.452"/>
+<status status="PASS" starttime="20211214 14:08:18.355" endtime="20211214 14:08:18.375"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${contract_type}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:22.452" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]/div'.</msg>
-<status status="PASS" starttime="20211214 13:58:22.452" endtime="20211214 13:58:22.498"/>
+<msg timestamp="20211214 14:08:18.376" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]/div'.</msg>
+<status status="PASS" starttime="20211214 14:08:18.375" endtime="20211214 14:08:18.473"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:27.499" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:22.498" endtime="20211214 13:58:27.499"/>
+<msg timestamp="20211214 14:08:23.474" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:08:18.474" endtime="20211214 14:08:23.475"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${trade_lower}</arg>
 <arg>60</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:27.499" endtime="20211214 13:58:27.517"/>
+<status status="PASS" starttime="20211214 14:08:23.475" endtime="20211214 14:09:05.229"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${trade_lower}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:27.518" level="INFO">Clicking element '//*[@id="dt_contract_high_low_item"]/span'.</msg>
-<status status="PASS" starttime="20211214 13:58:27.517" endtime="20211214 13:58:27.689"/>
+<msg timestamp="20211214 14:09:05.229" level="INFO">Clicking element '//*[@id="dt_contract_high_low_item"]/span'.</msg>
+<status status="PASS" starttime="20211214 14:09:05.229" endtime="20211214 14:09:06.553"/>
 </kw>
 <kw name="Clear Input Field" library="common">
 <arg>${duration_field}</arg>
@@ -254,23 +254,23 @@
 <arg>${input_field}</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:27.689" endtime="20211214 13:58:27.725"/>
+<status status="PASS" starttime="20211214 14:09:06.554" endtime="20211214 14:09:06.628"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${current_value}</var>
 <arg>${input_field}</arg>
 <arg>value</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20211214 13:58:27.740" level="INFO">${current_value} = 1</msg>
-<status status="PASS" starttime="20211214 13:58:27.725" endtime="20211214 13:58:27.740"/>
+<msg timestamp="20211214 14:09:06.725" level="INFO">${current_value} = 1</msg>
+<status status="PASS" starttime="20211214 14:09:06.628" endtime="20211214 14:09:06.725"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${value_length}</var>
 <arg>${current_value}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20211214 13:58:27.740" level="INFO">Length is 1</msg>
-<msg timestamp="20211214 13:58:27.740" level="INFO">${value_length} = 1</msg>
-<status status="PASS" starttime="20211214 13:58:27.740" endtime="20211214 13:58:27.740"/>
+<msg timestamp="20211214 14:09:06.726" level="INFO">Length is 1</msg>
+<msg timestamp="20211214 14:09:06.726" level="INFO">${value_length} = 1</msg>
+<status status="PASS" starttime="20211214 14:09:06.725" endtime="20211214 14:09:06.726"/>
 </kw>
 <kw name="Repeat Keyword" library="BuiltIn">
 <arg>${value_length}</arg>
@@ -278,17 +278,17 @@
 <arg>${input_field}</arg>
 <arg>BACKSPACE</arg>
 <doc>Executes the specified keyword multiple times.</doc>
-<msg timestamp="20211214 13:58:27.740" level="INFO">Repeating keyword, round 1/1.</msg>
+<msg timestamp="20211214 14:09:06.726" level="INFO">Repeating keyword, round 1/1.</msg>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${input_field}</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211214 13:58:27.741" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_simple_duration_datepicker"]/div/div/input element.</msg>
-<msg timestamp="20211214 13:58:28.057" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20211214 13:58:28.057" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20211214 13:58:27.740" endtime="20211214 13:58:28.126"/>
+<msg timestamp="20211214 14:09:06.726" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_simple_duration_datepicker"]/div/div/input element.</msg>
+<msg timestamp="20211214 14:09:07.104" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:07.104" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:06.726" endtime="20211214 14:09:07.157"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:27.740" endtime="20211214 13:58:28.127"/>
+<status status="PASS" starttime="20211214 14:09:06.726" endtime="20211214 14:09:07.157"/>
 </kw>
 <kw name="Repeat Keyword" library="BuiltIn">
 <arg>1</arg>
@@ -296,38 +296,38 @@
 <arg>${input_field}</arg>
 <arg>DELETE</arg>
 <doc>Executes the specified keyword multiple times.</doc>
-<msg timestamp="20211214 13:58:28.127" level="INFO">Repeating keyword, round 1/1.</msg>
+<msg timestamp="20211214 14:09:07.157" level="INFO">Repeating keyword, round 1/1.</msg>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${input_field}</arg>
 <arg>DELETE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211214 13:58:28.127" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_simple_duration_datepicker"]/div/div/input element.</msg>
-<msg timestamp="20211214 13:58:28.436" level="INFO">Pressing special key DELETE to element.</msg>
-<msg timestamp="20211214 13:58:28.436" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20211214 13:58:28.127" endtime="20211214 13:58:28.441"/>
+<msg timestamp="20211214 14:09:07.158" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_simple_duration_datepicker"]/div/div/input element.</msg>
+<msg timestamp="20211214 14:09:07.452" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 14:09:07.452" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 14:09:07.157" endtime="20211214 14:09:07.459"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:28.127" endtime="20211214 13:58:28.441"/>
+<status status="PASS" starttime="20211214 14:09:07.157" endtime="20211214 14:09:07.459"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:27.689" endtime="20211214 13:58:28.441"/>
+<status status="PASS" starttime="20211214 14:09:06.553" endtime="20211214 14:09:07.459"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${duration_field}</arg>
 <arg>2</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:28.442" level="INFO">Typing text '2' into text field '//*[@id="dt_simple_duration_datepicker"]/div/div/input'.</msg>
-<status status="PASS" starttime="20211214 13:58:28.441" endtime="20211214 13:58:28.576"/>
+<msg timestamp="20211214 14:09:07.460" level="INFO">Typing text '2' into text field '//*[@id="dt_simple_duration_datepicker"]/div/div/input'.</msg>
+<status status="PASS" starttime="20211214 14:09:07.459" endtime="20211214 14:09:07.555"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:30.576" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:28.576" endtime="20211214 13:58:30.576"/>
+<msg timestamp="20211214 14:09:09.556" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:07.556" endtime="20211214 14:09:09.556"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="dc_payout_toggle_item"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:30.577" level="INFO">Clicking element '//*[@id="dc_payout_toggle_item"]'.</msg>
-<status status="PASS" starttime="20211214 13:58:30.577" endtime="20211214 13:58:30.649"/>
+<msg timestamp="20211214 14:09:09.557" level="INFO">Clicking element '//*[@id="dc_payout_toggle_item"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:09.557" endtime="20211214 14:09:09.632"/>
 </kw>
 <kw name="Clear Input Field" library="common">
 <arg>${payout_field}</arg>
@@ -335,23 +335,23 @@
 <arg>${input_field}</arg>
 <arg>5</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20211214 13:58:30.649" endtime="20211214 13:58:30.660"/>
+<status status="PASS" starttime="20211214 14:09:09.633" endtime="20211214 14:09:09.642"/>
 </kw>
 <kw name="Get Element Attribute" library="SeleniumLibrary">
 <var>${current_value}</var>
 <arg>${input_field}</arg>
 <arg>value</arg>
 <doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
-<msg timestamp="20211214 13:58:30.674" level="INFO">${current_value} = 10</msg>
-<status status="PASS" starttime="20211214 13:58:30.660" endtime="20211214 13:58:30.674"/>
+<msg timestamp="20211214 14:09:09.658" level="INFO">${current_value} = 10</msg>
+<status status="PASS" starttime="20211214 14:09:09.642" endtime="20211214 14:09:09.658"/>
 </kw>
 <kw name="Get Length" library="BuiltIn">
 <var>${value_length}</var>
 <arg>${current_value}</arg>
 <doc>Returns and logs the length of the given item as an integer.</doc>
-<msg timestamp="20211214 13:58:30.675" level="INFO">Length is 2</msg>
-<msg timestamp="20211214 13:58:30.675" level="INFO">${value_length} = 2</msg>
-<status status="PASS" starttime="20211214 13:58:30.674" endtime="20211214 13:58:30.675"/>
+<msg timestamp="20211214 14:09:09.658" level="INFO">Length is 2</msg>
+<msg timestamp="20211214 14:09:09.658" level="INFO">${value_length} = 2</msg>
+<status status="PASS" starttime="20211214 14:09:09.658" endtime="20211214 14:09:09.658"/>
 </kw>
 <kw name="Repeat Keyword" library="BuiltIn">
 <arg>${value_length}</arg>
@@ -359,27 +359,27 @@
 <arg>${input_field}</arg>
 <arg>BACKSPACE</arg>
 <doc>Executes the specified keyword multiple times.</doc>
-<msg timestamp="20211214 13:58:30.675" level="INFO">Repeating keyword, round 1/2.</msg>
+<msg timestamp="20211214 14:09:09.658" level="INFO">Repeating keyword, round 1/2.</msg>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${input_field}</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211214 13:58:30.676" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
-<msg timestamp="20211214 13:58:30.987" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20211214 13:58:30.987" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20211214 13:58:30.675" endtime="20211214 13:58:31.054"/>
+<msg timestamp="20211214 14:09:09.658" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:10.031" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:10.031" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:09.658" endtime="20211214 14:09:10.073"/>
 </kw>
-<msg timestamp="20211214 13:58:31.054" level="INFO">Repeating keyword, round 2/2.</msg>
+<msg timestamp="20211214 14:09:10.073" level="INFO">Repeating keyword, round 2/2.</msg>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${input_field}</arg>
 <arg>BACKSPACE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211214 13:58:31.055" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
-<msg timestamp="20211214 13:58:31.334" level="INFO">Pressing special key BACKSPACE to element.</msg>
-<msg timestamp="20211214 13:58:31.334" level="INFO">Releasing special key BACKSPACE.</msg>
-<status status="PASS" starttime="20211214 13:58:31.054" endtime="20211214 13:58:31.361"/>
+<msg timestamp="20211214 14:09:10.073" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:10.362" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:10.363" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:10.073" endtime="20211214 14:09:10.393"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:30.675" endtime="20211214 13:58:31.361"/>
+<status status="PASS" starttime="20211214 14:09:09.658" endtime="20211214 14:09:10.393"/>
 </kw>
 <kw name="Repeat Keyword" library="BuiltIn">
 <arg>1</arg>
@@ -387,117 +387,375 @@
 <arg>${input_field}</arg>
 <arg>DELETE</arg>
 <doc>Executes the specified keyword multiple times.</doc>
-<msg timestamp="20211214 13:58:31.361" level="INFO">Repeating keyword, round 1/1.</msg>
+<msg timestamp="20211214 14:09:10.394" level="INFO">Repeating keyword, round 1/1.</msg>
 <kw name="Press Keys" library="SeleniumLibrary">
 <arg>${input_field}</arg>
 <arg>DELETE</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20211214 13:58:31.361" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_amount_input"] element.</msg>
-<msg timestamp="20211214 13:58:31.635" level="INFO">Pressing special key DELETE to element.</msg>
-<msg timestamp="20211214 13:58:31.635" level="INFO">Releasing special key DELETE.</msg>
-<status status="PASS" starttime="20211214 13:58:31.361" endtime="20211214 13:58:31.643"/>
+<msg timestamp="20211214 14:09:10.394" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:10.700" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 14:09:10.700" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 14:09:10.394" endtime="20211214 14:09:10.716"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:31.361" endtime="20211214 13:58:31.643"/>
+<status status="PASS" starttime="20211214 14:09:10.394" endtime="20211214 14:09:10.716"/>
 </kw>
-<status status="PASS" starttime="20211214 13:58:30.649" endtime="20211214 13:58:31.643"/>
+<status status="PASS" starttime="20211214 14:09:09.632" endtime="20211214 14:09:10.716"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${payout_field}</arg>
 <arg>15.50</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:31.643" level="INFO">Typing text '15.50' into text field '//*[@id="dt_amount_input"]'.</msg>
-<status status="PASS" starttime="20211214 13:58:31.643" endtime="20211214 13:58:31.730"/>
+<msg timestamp="20211214 14:09:10.717" level="INFO">Typing text '15.50' into text field '//*[@id="dt_amount_input"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:10.716" endtime="20211214 14:09:10.912"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20211214 13:58:33.730" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20211214 13:58:31.730" endtime="20211214 13:58:33.731"/>
+<msg timestamp="20211214 14:09:12.913" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:10.912" endtime="20211214 14:09:12.913"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>//*[@id="dt_purchase_put_button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20211214 13:58:33.731" level="INFO">Clicking element '//*[@id="dt_purchase_put_button"]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20211214 13:58:34.955" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-123.png"&gt;&lt;img src="selenium-screenshot-123.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211214 13:58:34.839" endtime="20211214 13:58:34.955"/>
+<msg timestamp="20211214 14:09:12.914" level="INFO">Clicking element '//*[@id="dt_purchase_put_button"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:12.913" endtime="20211214 14:09:13.000"/>
 </kw>
-<msg timestamp="20211214 13:58:34.956" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="dt_purchase_put_button" class="btn-purchase btn-purchase--animated--fade btn-purchase--2" disabled=""&gt;...&lt;/button&gt; is not clickable at point (1324, 558). Other element would receive the click: &lt;div class="trade-container__fieldset-wrapper trade-container__fieldset-wrapper--disabled"&gt;...&lt;/div&gt;
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-#0 0x5561ec6c3463 &lt;unknown&gt;
-#1 0x5561ec19b678 &lt;unknown&gt;
-#2 0x5561ec1d88a4 &lt;unknown&gt;
-#3 0x5561ec1d6374 &lt;unknown&gt;
-#4 0x5561ec1d3b2a &lt;unknown&gt;
-#5 0x5561ec1d2532 &lt;unknown&gt;
-#6 0x5561ec1c6238 &lt;unknown&gt;
-#7 0x5561ec1ee792 &lt;unknown&gt;
-#8 0x5561ec1c5fb3 &lt;unknown&gt;
-#9 0x5561ec1ee89e &lt;unknown&gt;
-#10 0x5561ec2019b1 &lt;unknown&gt;
-#11 0x5561ec1ee683 &lt;unknown&gt;
-#12 0x5561ec1c4b64 &lt;unknown&gt;
-#13 0x5561ec1c5b55 &lt;unknown&gt;
-#14 0x5561ec6f30fe &lt;unknown&gt;
-#15 0x5561ec7089d0 &lt;unknown&gt;
-#16 0x5561ec6f4055 &lt;unknown&gt;
-#17 0x5561ec709e18 &lt;unknown&gt;
-#18 0x5561ec6e882b &lt;unknown&gt;
-#19 0x5561ec724f98 &lt;unknown&gt;
-#20 0x5561ec725118 &lt;unknown&gt;
-#21 0x5561ec74059d &lt;unknown&gt;
-#22 0x7f1f06ee5609 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20211214 13:58:33.731" endtime="20211214 13:58:34.956"/>
-</kw>
-<status status="FAIL" starttime="20211214 13:58:06.155" endtime="20211214 13:58:34.956"/>
+<status status="PASS" starttime="20211214 14:08:02.112" endtime="20211214 14:09:13.000"/>
 </kw>
 <kw name="Check Barrier Error" library="common">
-<status status="NOT RUN" starttime="20211214 13:58:34.957" endtime="20211214 13:58:34.957"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:15.001" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:13.000" endtime="20211214 14:09:15.001"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${barrier_valfield}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:15.002" level="INFO">Clicking element '//*[@id="dt_barrier_1_input"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:15.001" endtime="20211214 14:09:15.076"/>
+</kw>
+<kw name="Clear Input Field" library="common">
+<arg>${barrier_valfield}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 14:09:15.077" endtime="20211214 14:09:15.085"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 14:09:15.095" level="INFO">${current_value} = 0.71472</msg>
+<status status="PASS" starttime="20211214 14:09:15.085" endtime="20211214 14:09:15.096"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 14:09:15.096" level="INFO">Length is 7</msg>
+<msg timestamp="20211214 14:09:15.096" level="INFO">${value_length} = 7</msg>
+<status status="PASS" starttime="20211214 14:09:15.096" endtime="20211214 14:09:15.096"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 14:09:15.096" level="INFO">Repeating keyword, round 1/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:15.096" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:15.373" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:15.373" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:15.096" endtime="20211214 14:09:15.390"/>
+</kw>
+<msg timestamp="20211214 14:09:15.390" level="INFO">Repeating keyword, round 2/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:15.390" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:15.693" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:15.693" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:15.390" endtime="20211214 14:09:15.742"/>
+</kw>
+<msg timestamp="20211214 14:09:15.742" level="INFO">Repeating keyword, round 3/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:15.742" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:16.040" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:16.040" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:15.742" endtime="20211214 14:09:16.066"/>
+</kw>
+<msg timestamp="20211214 14:09:16.066" level="INFO">Repeating keyword, round 4/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:16.067" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:16.342" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:16.342" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:16.067" endtime="20211214 14:09:16.362"/>
+</kw>
+<msg timestamp="20211214 14:09:16.362" level="INFO">Repeating keyword, round 5/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:16.363" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:16.640" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:16.640" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:16.362" endtime="20211214 14:09:16.667"/>
+</kw>
+<msg timestamp="20211214 14:09:16.667" level="INFO">Repeating keyword, round 6/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:16.668" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:16.937" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:16.937" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:16.667" endtime="20211214 14:09:16.959"/>
+</kw>
+<msg timestamp="20211214 14:09:16.959" level="INFO">Repeating keyword, round 7/7.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:16.959" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:17.228" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:17.228" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:16.959" endtime="20211214 14:09:17.291"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:15.096" endtime="20211214 14:09:17.291"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 14:09:17.292" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:17.292" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_barrier_1_input"] element.</msg>
+<msg timestamp="20211214 14:09:17.593" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 14:09:17.593" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 14:09:17.292" endtime="20211214 14:09:17.608"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:17.291" endtime="20211214 14:09:17.608"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:15.076" endtime="20211214 14:09:17.608"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${barrier_valfield}</arg>
+<arg>+1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:17.608" level="INFO">Typing text '+1' into text field '//*[@id="dt_barrier_1_input"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:17.608" endtime="20211214 14:09:17.761"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:22.762" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:17.761" endtime="20211214 14:09:22.762"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${payout_field}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:22.762" level="INFO">Clicking element '//*[@id="dt_amount_input"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:22.762" endtime="20211214 14:09:22.893"/>
+</kw>
+<kw name="Clear Input Field" library="common">
+<arg>${payout_field}</arg>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>5</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20211214 14:09:22.893" endtime="20211214 14:09:22.899"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${current_value}</var>
+<arg>${input_field}</arg>
+<arg>value</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20211214 14:09:22.910" level="INFO">${current_value} = 15.50</msg>
+<status status="PASS" starttime="20211214 14:09:22.899" endtime="20211214 14:09:22.910"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${value_length}</var>
+<arg>${current_value}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20211214 14:09:22.910" level="INFO">Length is 5</msg>
+<msg timestamp="20211214 14:09:22.910" level="INFO">${value_length} = 5</msg>
+<status status="PASS" starttime="20211214 14:09:22.910" endtime="20211214 14:09:22.910"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>${value_length}</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 14:09:22.910" level="INFO">Repeating keyword, round 1/5.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:22.911" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:23.180" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:23.181" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:22.910" endtime="20211214 14:09:23.214"/>
+</kw>
+<msg timestamp="20211214 14:09:23.214" level="INFO">Repeating keyword, round 2/5.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:23.215" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:23.500" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:23.501" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:23.214" endtime="20211214 14:09:23.521"/>
+</kw>
+<msg timestamp="20211214 14:09:23.521" level="INFO">Repeating keyword, round 3/5.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:23.522" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:23.789" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:23.789" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:23.521" endtime="20211214 14:09:23.840"/>
+</kw>
+<msg timestamp="20211214 14:09:23.840" level="INFO">Repeating keyword, round 4/5.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:23.841" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:24.160" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:24.160" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:23.840" endtime="20211214 14:09:24.177"/>
+</kw>
+<msg timestamp="20211214 14:09:24.177" level="INFO">Repeating keyword, round 5/5.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>BACKSPACE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:24.178" level="INFO">Sending key(s) ('BACKSPACE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:24.447" level="INFO">Pressing special key BACKSPACE to element.</msg>
+<msg timestamp="20211214 14:09:24.447" level="INFO">Releasing special key BACKSPACE.</msg>
+<status status="PASS" starttime="20211214 14:09:24.177" endtime="20211214 14:09:24.491"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:22.910" endtime="20211214 14:09:24.491"/>
+</kw>
+<kw name="Repeat Keyword" library="BuiltIn">
+<arg>1</arg>
+<arg>Press Keys</arg>
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Executes the specified keyword multiple times.</doc>
+<msg timestamp="20211214 14:09:24.491" level="INFO">Repeating keyword, round 1/1.</msg>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${input_field}</arg>
+<arg>DELETE</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20211214 14:09:24.492" level="INFO">Sending key(s) ('DELETE',) to //*[@id="dt_amount_input"] element.</msg>
+<msg timestamp="20211214 14:09:24.771" level="INFO">Pressing special key DELETE to element.</msg>
+<msg timestamp="20211214 14:09:24.771" level="INFO">Releasing special key DELETE.</msg>
+<status status="PASS" starttime="20211214 14:09:24.491" endtime="20211214 14:09:24.788"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:24.491" endtime="20211214 14:09:24.788"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:22.893" endtime="20211214 14:09:24.788"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${payout_field}</arg>
+<arg>10</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:24.788" level="INFO">Typing text '10' into text field '//*[@id="dt_amount_input"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:24.788" endtime="20211214 14:09:24.905"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:26.905" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:24.905" endtime="20211214 14:09:26.906"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:13.000" endtime="20211214 14:09:26.906"/>
 </kw>
 <kw name="Check Multiplier Parameter" library="common">
-<status status="NOT RUN" starttime="20211214 13:58:34.957" endtime="20211214 13:58:34.957"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:28.907" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:26.906" endtime="20211214 14:09:28.907"/>
 </kw>
-<status status="FAIL" starttime="20211214 13:57:14.652" endtime="20211214 13:58:34.957">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button id="dt_purchase_put_button" class="btn-purchase btn-purchase--animated--fade btn-purchase--2" disabled=""&gt;...&lt;/button&gt; is not clickable at point (1324, 558). Other element would receive the click: &lt;div class="trade-container__fieldset-wrapper trade-container__fieldset-wrapper--disabled"&gt;...&lt;/div&gt;
-  (Session info: chrome=95.0.4638.69)
-Stacktrace:
-#0 0x5561ec6c3463 &lt;unknown&gt;
-#1 0x5561ec19b678 &lt;unknown&gt;
-#2 0x5561ec1d88a4 &lt;unknown&gt;
-#3 0x5561ec1d6374 &lt;unknown&gt;
-#4 0x5561ec1d3b2a &lt;unknown&gt;
-#5 0x5561ec1d2532 &lt;unknown&gt;
-#6 0x5561ec1c6238 &lt;unknown&gt;
-#7 0x5561ec1ee792 &lt;unknown&gt;
-#8 0x5561ec1c5fb3 &lt;unknown&gt;
-#9 0x5561ec1ee89e &lt;unknown&gt;
-#10 0x5561ec2019b1 &lt;unknown&gt;
-#11 0x5561ec1ee683 &lt;unknown&gt;
-#12 0x5561ec1c4b64 &lt;unknown&gt;
-#13 0x5561ec1c5b55 &lt;unknown&gt;
-#14 0x5561ec6f30fe &lt;unknown&gt;
-#15 0x5561ec7089d0 &lt;unknown&gt;
-#16 0x5561ec6f4055 &lt;unknown&gt;
-#17 0x5561ec709e18 &lt;unknown&gt;
-#18 0x5561ec6e882b &lt;unknown&gt;
-#19 0x5561ec724f98 &lt;unknown&gt;
-#20 0x5561ec725118 &lt;unknown&gt;
-#21 0x5561ec74059d &lt;unknown&gt;
-#22 0x7f1f06ee5609 &lt;unknown&gt;
-</status>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${market_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:28.907" level="INFO">Clicking element '//*[@class="cq-symbol-select-btn"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:28.907" endtime="20211214 14:09:29.066"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="ic-icon ic-synthetic_index"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:29.067" level="INFO">Clicking element '//*[@class="ic-icon ic-synthetic_index"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:29.067" endtime="20211214 14:09:29.409"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@class="ic-icon ic-R_50"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:29.410" level="INFO">Clicking element '//*[@class="ic-icon ic-R_50"]'.</msg>
+<status status="PASS" starttime="20211214 14:09:29.409" endtime="20211214 14:09:29.523"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:31.523" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:29.523" endtime="20211214 14:09:31.524"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${contract_type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:31.524" level="INFO">Clicking element '//*[@id="dt_contract_dropdown"]/div'.</msg>
+<status status="PASS" starttime="20211214 14:09:31.524" endtime="20211214 14:09:31.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20211214 14:09:33.578" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20211214 14:09:31.578" endtime="20211214 14:09:33.579"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="dt_contract_multiplier_item"]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211214 14:09:33.579" level="INFO">Clicking element '//*[@id="dt_contract_multiplier_item"]/span'.</msg>
+<status status="PASS" starttime="20211214 14:09:33.579" endtime="20211214 14:09:33.706"/>
+</kw>
+<status status="PASS" starttime="20211214 14:09:26.906" endtime="20211214 14:09:33.706"/>
+</kw>
+<status status="PASS" starttime="20211214 14:07:15.108" endtime="20211214 14:09:33.706"/>
 </test>
-<status status="FAIL" starttime="20211214 13:57:14.570" endtime="20211214 13:58:34.957"/>
+<status status="PASS" starttime="20211214 14:07:15.026" endtime="20211214 14:09:33.707"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
 </suite>
 </statistics>
 <errors>

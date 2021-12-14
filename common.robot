@@ -87,8 +87,9 @@ Check Multiplier Parameter
     sleep   2
     click element    ${contract_type}
     sleep   2
+    page should not contain     //*[@id="chart_container"]/div[1]/div/div/div/button
     click element    //*[@id="dt_contract_multiplier_item"]/span
-# //*[@class="categories-container contract-type-widget__icon-wrapper"]
+
 
 
 #clear input text field
